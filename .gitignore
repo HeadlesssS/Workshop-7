@@ -1,0 +1,39 @@
+# Build artifacts
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userprefs
+*.csproj.user
+
+# JetBrains Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# MAUI platform build output
+*/Platforms/*/bin/
+*/Platforms/*/obj/
+
+# Android artifacts
+*.apk
+*.aab
+*.keystore
+
+# Logs and temp files
+*.log
+*.tmp
+*.cache
+*.pdb
+
+# Node / Web assets (BlazorWebView)
+node_modules/
+wwwroot/dist/
+
+# System junk
+Thumbs.db
+.DS_Store
