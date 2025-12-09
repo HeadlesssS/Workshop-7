@@ -2,14 +2,14 @@
 
 <h3>Monkey List</h3>
 
-@if (Monkeys == null || Monkeys.Count == 0)
+@if (MonkeyList == null || MonkeyList.Count == 0)
 {
     <p style="font-style: italic; color: #666;">No monkeys found</p>
 }
 else
 {
     <div style="display:flex; flex-wrap:wrap; gap:20px;">
-        @foreach (var m in Monkeys)
+        @foreach (var m in MonkeyList)  @* Fixed the variable name here *@
         {
             <div style="
                 width:250px; 
@@ -39,7 +39,7 @@ else
         public string Image { get; set; }
     }
 
-    List<Monkey> Monkeys = new()
+    List<Monkey> MonkeyList = new()
     {
         new Monkey
         {
